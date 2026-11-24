@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Thamer Wedding//AR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:thamer-wedding-20261219@akun-astronomy.github.io
+DTSTAMP:20261124T120000Z
+DTSTART:20261219T180000Z
+DTEND:20261219T220000Z
+SUMMARY:حفل زواج ثامر
+LOCATION:قاعة الملكة - جدة
+GEO:21.498882;39.212657
+DESCRIPTION:بكل حب وفرح، نتشرّف بدعوتكم لمشاركتنا فرحة زواج ثامر.\nالموقع: https://www.google.com/maps/search/?api=1&query=21.498882\,39.212657
+URL:https://www.google.com/maps/search/?api=1&query=21.498882,39.212657
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:حفل زواج ثامر بكرة
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:حفل زواج ثامر بعد 3 ساعات
+TRIGGER:-PT3H
+END:VALARM
+END:VEVENT
+END:VCALENDAR
