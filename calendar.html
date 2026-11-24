@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>إضافة حفل زواج ثامر إلى التقويم</title>
+<meta property="og:title" content="حفل زواج ثامر — إضافة إلى التقويم">
+<meta property="og:description" content="السبت 19 ديسمبر 2026 · 9:00 مساءً · قاعة الملكة - جدة">
+<style>
+body{margin:0;min-height:100svh;display:grid;place-items:center;background:#1e1024;color:#fbf6ec;font:17px/1.7 Tahoma,"Segoe UI",sans-serif;text-align:center;padding:24px;box-sizing:border-box}
+.card{max-width:380px;width:100%;border:1px solid #d4b071;border-radius:6px;padding:32px 22px;background:#2b1733}
+h1{font-size:26px;margin:0 0 4px;color:#f1dcae}
+p{margin:0 0 22px;color:#e8dccb}
+a{display:flex;align-items:center;justify-content:center;min-height:50px;margin:10px 0;border-radius:3px;text-decoration:none;font-weight:700}
+.main{background:linear-gradient(135deg,#d4b071,#9c7b45);color:#1e1024}
+.alt{border:1px solid #d4b071;color:#f1dcae}
+small{display:block;margin-top:14px;color:#b9a68c;font-size:13px}
+</style>
+</head>
+<body>
+<div class="card">
+  <h1>حفل زواج ثامر</h1>
+  <p>السبت 19 ديسمبر 2026 · 9:00 مساءً<br>قاعة الملكة - جدة</p>
+  <a class="main" id="apple" href="thamer-wedding.ics">إضافة إلى تقويم الآيفون</a>
+  <a class="alt" id="google" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=%D8%AD%D9%81%D9%84%20%D8%B2%D9%88%D8%A7%D8%AC%20%D8%AB%D8%A7%D9%85%D8%B1&dates=20261219T180000Z/20261219T220000Z&location=%D9%82%D8%A7%D8%B9%D8%A9%20%D8%A7%D9%84%D9%85%D9%84%D9%83%D8%A9%20-%20%D8%AC%D8%AF%D8%A9&details=https%3A%2F%2Fwww.google.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3D21.498882%2C39.212657">إضافة إلى تقويم Google</a>
+  <a class="alt" href="thamer-wedding.ics">تقويم سامسونج أو غيره (ملف)</a>
+  <small id="hint">جارٍ فتح التقويم…</small>
+</div>
+<script>
+{
+  const ua = navigator.userAgent;
+  const ios = /iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && 'ontouchend' in document);
+  const android = /Android/.test(ua);
+  const hint = document.getElementById('hint');
+  if (ios) location.href = 'thamer-wedding.ics';
+  else if (android) location.href = document.getElementById('google').href;
+  else hint.textContent = 'اختر التقويم اللي تستخدمه';
+  setTimeout(() => { hint.textContent = 'إذا ما انفتح التقويم، اضغط الزر المناسب فوق'; }, 2500);
+}
+</script>
+</body>
+</html>
